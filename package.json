@@ -1,0 +1,20 @@
+{
+  "name": "rgy0720",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kkbox/kkbox-js-sdk": "^1.3.3",
+    "axios": "^0.18.0",
+    "bottender": "^0.15.0",
+    "md5": "^2.2.1",
+    "nodemon": "^1.18.3"
+  }
+}
