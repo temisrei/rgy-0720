@@ -4,9 +4,9 @@ module.exports = {
     accessToken: 'ztKNFFyxtsNL8ArXfEH1q4PpFumQt80t1njz+6ydpincwgcqMaE/sYKNFFiZyyn7jYZJwHAomk87URrTiMbqxk6f3PbbP7l6KtCA7uXlhPrhK1zYnh2uSXk+dmeote+BBCg0QgbGaKidh64uf+2yvAdB04t89/1O/w1cDnyilFU='
   },
   messenger: {
-    accessToken: '',
-    appSecret: '',
-    verifyToken: '',
+    accessToken: 'EAAF3l53gPqoBANlevVj9nJ7mCn58TsVRmTYQqxuYFzZBJLU0mlIyHzH9sZB8RtlGCqLB3ecr3NkshKLLM8JaJJ7371RCP59vGk4vqd2HKrVgZCrXj5LJHTck8dYlZAch73J9ywFUTJwjOwb3rwLFKkFBg8oUSqxoBeCPqNjWKoFZBkWubCSdV',
+    appSecret: '93fbc872c307de48aa33953a48a45a33',
+    verifyToken: 'B7F638B0D5ACC2547CBF0DD0A35C4B06B6EDA1023205CAA07BF2F49AA8938141',
   },
   telegram: {
     accessToken: '',

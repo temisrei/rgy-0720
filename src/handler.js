@@ -1,5 +1,6 @@
 const {
-    LineHandler
+    LineHandler,
+    MessengerHandler
 } = require('bottender')
 const olami = require('./nlp/Olami')
 
@@ -25,10 +26,25 @@ exports.lineHandler = new LineHandler()
         await context.replyText(helpMessage)
     })
     .onText(async context => {
+        console.log('有進來嗎')
         const text = context.event.text
         const reply = await olami.nli(text)
+        console.log(reply)
         await context.reply([reply.toLineMessage()])
     })
     .onError(async (context, err) => {
         await context.replyText('對不起唷~ 我需要多一點時間來處理 Q_Q')
+    })
+
+exports.messengerHandler = new MessengerHandler()
+    .onText('\/help', async context => {
+        await context.sendText(helpMessage)
+    })
+    .onText(async context => {
+        const text = context.event.text
+        const reply = await olami.nli(text)
+        await context.sendMessage(reply.toMessengerMessage())
+    })
+    .onError(async (context, err) => {
+        await context.sendText('對不起唷~ 我需要多一點時間來處理 Q_Q')
     })
