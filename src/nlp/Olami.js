@@ -104,6 +104,8 @@ class Olami {
         return handleSelectionType(desc)
       case 'ds':
         return new TextMessage(desc.result + '\n請用 /help 指令看看我能怎麼幫助您')
+      // case 'math':
+      //   return new TextMessage(desc.result)
       case 'music_kkbox':
         return handleMusicKKBOXType(semantic[0])
       default:
